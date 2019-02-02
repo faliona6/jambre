@@ -1,12 +1,33 @@
 <div class="background">
     <div id="header">
         <h1 class="title center-x">Create An Account</h1>
-    <div>
+    <div id="login_div">
     <div id="container" class="center-x">
         <input type="email" class="input"type="text" placeholder="Email" id="email_field"><br />
-        <input type="password" class="input" type="text" placeholder="Password"><br />
-        <input type="password" class="input" type="text" placeholder="Re-type password">
-        <button id="createButton" onclick="login()"> Create Account </button>
+        <input type="password" class="input" type="text" placeholder="Password" id="password_field"><br />
+        <input type="password" class="input" type="text" placeholder="Re-type password" id="password_conf_field">
+        <button id="createButton" onclick="create()"> Create Account </button>
     </div>
 
 </div>
+
+<div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+        
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDtJrNKruPz74uXLW6PnGsWOv9bVQsS9ng",
+    authDomain: "bandbase-26533.firebaseapp.com",
+    databaseURL: "https://bandbase-26533.firebaseio.com",
+    projectId: "bandbase-26533",
+    storageBucket: "bandbase-26533.appspot.com",
+    messagingSenderId: "962953801879"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="./index.js"></script>
