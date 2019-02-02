@@ -1,3 +1,4 @@
+import { CreatebandComponent } from './createband/createband.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
@@ -6,7 +7,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { FindbandsComponent } from './findbands/findbands.component';
 import { BandpageComponent } from './bandpage/bandpage.component';
 import { ProfileComponent } from './profile/profile.component';
-import { OneTimeProfileCreationComponent } from './one-time-profile-creation/one-time-profile-creation.component';
 
 const routes: Routes = [
   {
@@ -39,8 +39,8 @@ const routes: Routes = [
     component: ProfileComponent
   },
   {
-    path: 'onetimeprofilecreation',
-    component: OneTimeProfileCreationComponent
+    path: 'createband',
+    component: CreatebandComponent
   }
 ];
 
