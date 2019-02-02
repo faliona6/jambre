@@ -11,17 +11,17 @@
 }
 
 a {
+    color: var(--main-red) !important;
+    font-family: var(--main-font);
     text-decoration: none;
     transition: color 0.3s;
+    font-size: 16px;
 }
 
 a:hover {
-    color: var(--main-mauve);
+    color: var(--main-mauve) !important;
 }
 
-a:active {
-    text-decoration: underline;
-}
 
 
 /* ---------------------Navbar--------------------- */
@@ -41,10 +41,13 @@ a:active {
     width: auto;
 }
 
-.nav-label {
+.navbar-inverse .navbar-nav>li {
     color: #e35953;
-    /* padding: 20px 0px 20px 40px;
-    display: inline; */
+}
+
+.navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
 
 .user-icon {
@@ -62,6 +65,8 @@ a:active {
     margin: 10px 20px 10px 15px;
 
 }
+
+
 
 li {
     display: inline;

@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FindbandsComponent } from './findbands/findbands.component';
 import { BandpageComponent } from './bandpage/bandpage.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,14 @@ const routes: Routes = [
   {
     path: 'bandpage',
     component: BandpageComponent
+  },
+  {
+    path: 'findbands',
+    component: FindbandsComponent
+  },
+  {
+    path: 'profile',
+    component: ProfileComponent
   }
 ];
 
