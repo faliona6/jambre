@@ -103,7 +103,7 @@ p {
 }
 
 .line {
-    width: 800px;
+    width: 80%;
     height: 1px;
     background: grey;
     margin: 0px;
