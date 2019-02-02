@@ -12,12 +12,26 @@
   position: relative;
 }
 
-.hero-image span{
+.band-name{
     position: relative;
     top: 83%;
     left: 1%;
     color: lightGrey;
     font-size: 30pt;
+    text-overflow: clip;
+    text-shadow: 0 0 4px black;
+    font-family: var(--main-font);
+}
+
+.subtext{
+    position: inherit;
+    top: 83%;
+    left: 1%;
+    color: lightGrey;
+    font-size: 15pt;
+    text-overflow: clip;
+    text-shadow: 0 0 4px black;
+    font-family: var(--main-font);
 }
 
 .button{
