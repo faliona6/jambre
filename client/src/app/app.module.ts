@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { FindbandsComponent } from './findbands/findbands.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BandpageComponent } from './bandpage/bandpage.component';
+import { OneTimeProfileCreationComponent } from './one-time-profile-creation/one-time-profile-creation.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BandpageComponent } from './bandpage/bandpage.component';
     HomeComponent,
     FindbandsComponent,
     ProfileComponent,
-    BandpageComponent
+    BandpageComponent,
+    OneTimeProfileCreationComponent
   ],
   imports: [
     BrowserModule,

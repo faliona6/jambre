@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { FindbandsComponent } from './findbands/findbands.component';
 import { BandpageComponent } from './bandpage/bandpage.component';
 import { ProfileComponent } from './profile/profile.component';
+import { OneTimeProfileCreationComponent } from './one-time-profile-creation/one-time-profile-creation.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent
+  },
+  {
+    path: 'onetimeprofilecreation',
+    component: OneTimeProfileCreationComponent
   }
 ];
 
