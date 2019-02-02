@@ -9,7 +9,7 @@ const login = require('./routes/login');
 const register = require('./routes/register');
 
 app.use(express.static(path.join(__dirname, '/client/dist/jam-it')));
-app.use(express.static(path.join(__dirname, '/client/src/firebaseAuth.js')));
+app.use(express.static(path.join(__dirname, '/client/src/app/register/index.js')));
 
 
 app.use('/login', express.static(path.join(__dirname, '/client/dist/jam-it')));

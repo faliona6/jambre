@@ -1,5 +1,3 @@
 #banner-photo{
-    position: absolute;
     width:100%;
-    clip: rect(0px,0px,100px,0px);
 }
