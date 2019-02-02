@@ -598,8 +598,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\fiona\Documents\GitHub\jambre\client\src\styles.css */"./src/styles.css");
-module.exports = __webpack_require__(/*! C:\Users\fiona\Documents\GitHub\jambre\client\node_modules\bootstrap\dist\css\bootstrap.css */"./node_modules/bootstrap/dist/css/bootstrap.css");
+__webpack_require__(/*! C:\Users\SXion\jambre\client\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\SXion\jambre\client\node_modules\bootstrap\dist\css\bootstrap.css */"./node_modules/bootstrap/dist/css/bootstrap.css");
 
 
 /***/ })

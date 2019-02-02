@@ -7,7 +7,6 @@ import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NavComponent } from './nav/nav.component';
 import { RegisterComponent } from './register/register.component';
-import { HomeComponent } from './home/home.component';
 import { FindbandsComponent } from './findbands/findbands.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BandpageComponent } from './bandpage/bandpage.component';
@@ -19,7 +18,6 @@ import { CreatebandComponent } from './createband/createband.component';
     LoginComponent,
     NavComponent,
     RegisterComponent,
-    HomeComponent,
     FindbandsComponent,
     ProfileComponent,
     BandpageComponent,

@@ -12,30 +12,40 @@
   position: relative;
 }
 
-.hero-image span{
+/* BAND BANNER*/
+.band-name{
     position: relative;
     top: 83%;
     left: 1%;
     color: lightGrey;
     font-size: 30pt;
+    text-overflow: clip;
+    text-shadow: 0 0 4px black;
+    font-family: var(--main-font);
 }
 
-.button{
-    padding: 15px 15px 15px 15px;
-    border-radius: 3px;
-    border-width: 0px;
-    background-color: #e35953;
-    font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    margin-bottom: 15px;
+.subtext{
+    position: inherit;
+    top: 83%;
+    left: 1%;
+    color: lightGrey;
+    font-size: 15pt;
+    text-overflow: clip;
+    text-shadow: 0 0 4px black;
+    font-family: var(--main-font);
 }
 
-.button:hover{
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.6), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+/*Band Information*/
+.band-information{
+    position:absolute;
+    left:50%;
+    transform: translate(-50%, 0%);
+    width: 80%;
+}
+.header {
+    font-family: var(--main-font);
+    color: black;
+    font-size: 18pt;
 }
 
 

@@ -1,5 +1,4 @@
 import { CreatebandComponent } from './createband/createband.component';
-import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
@@ -11,7 +10,7 @@ import { ProfileComponent } from './profile/profile.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/login',
+    redirectTo: '/findbands',
     pathMatch: 'full'
   },
   {
@@ -21,10 +20,6 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegisterComponent
-  },
-  {
-    path: 'home',
-    component: HomeComponent
   },
   {
     path: 'bandpage',
