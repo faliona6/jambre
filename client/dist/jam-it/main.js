@@ -197,11 +197,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// <<<<<<< HEAD
 
-// =======
 
-// >>>>>>> a9c9adb6a6db6f214be0bb5a64a94019cd3e3a94
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -214,11 +211,8 @@ var AppModule = /** @class */ (function () {
                 _register_register_component__WEBPACK_IMPORTED_MODULE_8__["RegisterComponent"],
                 _home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"],
                 _findbands_findbands_component__WEBPACK_IMPORTED_MODULE_10__["FindbandsComponent"],
-                // <<<<<<< HEAD
                 _profile_profile_component__WEBPACK_IMPORTED_MODULE_11__["ProfileComponent"],
-                // =======
                 _bandpage_bandpage_component__WEBPACK_IMPORTED_MODULE_12__["BandpageComponent"]
-                // >>>>>>> a9c9adb6a6db6f214be0bb5a64a94019cd3e3a94
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
