@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavComponent } from './nav/nav.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
+import { FindbandsComponent } from './findbands/findbands.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     NavComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    FindbandsComponent
   ],
   imports: [
     BrowserModule,
