@@ -1,32 +1,41 @@
-// Initialize Firebase
-var config = {
-    apiKey: "AIzaSyDtJrNKruPz74uXLW6PnGsWOv9bVQsS9ng",
-    authDomain: "bandbase-26533.firebaseapp.com",
-    databaseURL: "https://bandbase-26533.firebaseio.com",
-    projectId: "bandbase-26533",
-    storageBucket: "bandbase-26533.appspot.com",
-    messagingSenderId: "962953801879"
-  };
-  firebase.initializeApp(config);
-  firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      // User is signed in.
-      document.getElementById("user_div").style.display = "block";
-      document.getElementById("login_div").style.display = "none";
-      var user = firebase.auth().currentUser;
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    var user = firebase.auth().currentUser;
+    var userName = document.getElementById("firstname_field") + document.getElementById("lastname_field")
+    var userInstruments = document.getElementById("instruments_field").value;
+    var userGenres = document.getElementById("genres_field").value;
+    var userPlayingPrefs = document.getElementById("playing_pref_field").value;
+    var userBio = document.getElementById("bio_field").value;
+// Add a new document in collection "cities"
+var db = firebase.firestore();
+    db.collection("test").doc(user.email).set({
+    instruments: userInstruments,
+    genres: userGenres,
+    preferences: userPlayingPrefs,
+    bio: userBio,
+    name: userName
+})
+.then(function() {
+    console.log("Document successfully written!");
+})
+.catch(function(error) {
+    console.error("Error writing document: ", error);
+});
+      
+    window.location.href = "http://google.com";
+    if(user != null){
+      var email_id = user.email;
 
-      if(user != null){
-        var email_id = user.email;
-        document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
-      }
     }
-
-    else {
-      // No user is signed in.
-      document.getElementById("user_div").style.display = "none";
-      document.getElementById("login_div").style.display = "block";
-    }
-  });
+  }   
+    
+  else {
+    // No user is signed in.
+    document.getElementById("user_div").style.display = "none";
+    document.getElementById("login_div").style.display = "block";
+  }
+});
 
   function create(){
     var userEmail = document.getElementById("email_field").value;
@@ -41,12 +50,13 @@ var config = {
           window.alert("Error : " + errorMessage);
           // Do other stuff??
           });
+          
       }
       else {
           window.alert("Error : Passwords do not match");
       }
-  }
+}
 
-  function logout(){
-    firebase.auth().signOut();
+function logout(){
+  firebase.auth().signOut();
 }
