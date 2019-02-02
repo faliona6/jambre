@@ -10,13 +10,17 @@
     margin: 0px 0px 0px 0px;
 }
 
-.center{
-    border: 3px 3px 3px 3px;
-    border-color: red;
+.container{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.center-x{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .input{

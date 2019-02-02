@@ -1,5 +1,3 @@
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireAuth } from 'angularfire2/auth';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-    constructor(private firebase: AngularFireModule, private afAuth: AngularFireAuth) { }
+    constructor() { }
 
     ngOnInit() {
-        
+
     }
 
 }
