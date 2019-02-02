@@ -11,21 +11,17 @@
 }
 
 a {
+    color: var(--main-red) !important;
+    font-family: var(--main-font);
     text-decoration: none;
     transition: color 0.3s;
+    font-size: 16px;
 }
 
 a:hover {
-    color: var(--main-mauve);
+    color: var(--main-mauve) !important;
 }
 
-a:active {
-    text-decoration: underline;
-}
-
-.user-name {
-  font-weight: bold;
-}
 
 
 /* ---------------------Navbar--------------------- */
@@ -45,7 +41,7 @@ a:active {
     width: auto;
 }
 
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav>li {
     color: #e35953;
 }
 
