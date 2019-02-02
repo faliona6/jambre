@@ -1,6 +1,6 @@
 .background{
     background-color: #BCBCBC;
-    background-image: url("../images/loginBackground.jpg");
+    background-image: url("./loginBackground.jpg");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;

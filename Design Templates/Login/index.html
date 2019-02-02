@@ -2,18 +2,16 @@
 <html>
     <head>
         <title> testing for the hackathon </title>
-        <link rel="stylesheet" href="Style/login.css">  <!-- link to external stylesheet -->
+        <link rel="stylesheet" href="./login.css">  <!-- link to external stylesheet -->
 
     </head>
     <body class="background">
-        <div class="center">
-            <form>
-                <input class="input" type="text" placeholder="Username"></br>
-                <input class="input" type="text" placeholder="Password">
-            </form>
+        <div class="center" id="login_div" class="main-div">
+                <input type ="email" class="input" type="text" placeholder="Username" id="email_field"><br/>
+                <input type ="password" class="input" type="text" placeholder="Password" id="password_field">
             <br/>
 
-            <button class="center-x" id="loginButton" onclick="dothis">Login</button>
+            <button class="center-x" id="loginButton" onclick="login()">Login</button>
             <br/>
             <br/>
             <br/>
@@ -21,6 +19,27 @@
                 <a class="center-x" href="Need an account? Sign up here!">Need an account? Sign up here!</a>
             </div>
         </div>
+          <div id="user_div" class="loggedin-div">
+            <h3>Welcome User</h3>
+            <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+            <button onclick="logout()">Logout</button>
+          </div>
 
+
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDtJrNKruPz74uXLW6PnGsWOv9bVQsS9ng",
+    authDomain: "bandbase-26533.firebaseapp.com",
+    databaseURL: "https://bandbase-26533.firebaseio.com",
+    projectId: "bandbase-26533",
+    storageBucket: "bandbase-26533.appspot.com",
+    messagingSenderId: "962953801879"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="index.js"></script>
+        
     </body>
 </html>
