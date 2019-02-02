@@ -1,4 +1,15 @@
 /*----------Links---------*/
+:root {
+    --main-black: #2a2929;
+    --main-red: #e35953;
+    --main-yellow: #f2c06f;
+    --main-green: #c3d190;
+    --main-mauve: #d8bcbc;
+    --main-white: white;
+
+    --main-font: 'Source Sans Pro', sans-serif;
+}
+
 a {
     text-decoration: none;
     transition: color 0.3s;
@@ -31,7 +42,7 @@ a:active {
 
 .nav-label {
     padding: 20px 0px 20px 40px;
-    display: block;
+    display: inline;
 }
 
 .user-icon {
