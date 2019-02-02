@@ -110,6 +110,12 @@ p {
     text-align:center;
 }
 
+.main-container {
+    overflow: auto;
+    padding: 61px 0px 0px 0px;
+    left: 50%;
+}
+
 /*Displaying bands*/
 #band-img {
     width: 380px;
