@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
 import { Router, ActivatedRoute, NavigationStart } from '@angular/router';
-import { AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
     selector: 'app-root',

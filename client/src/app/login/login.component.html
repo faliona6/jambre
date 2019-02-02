@@ -1,15 +1,17 @@
 <div class="background">
-    <div class="container" id="login_div" class="main-div">
+    <div>
+        <img class="bandbase" src="../../assets/bandbase-logo-and-text.png" alt="BandBase logo">
+    </div>
+    <br/>
+    <div id="login_div" class="main-div">
         <input type="email" class="input" type="text" placeholder="Username" id="email_field"><br />
         <input type="password" class="input" type="text" placeholder="Password" id="password_field">
         <br />
 
-        <button class="center-x" id="loginButton" onclick="login()">Login</button>
-        <br />
-        <br />
-        <br />
-        <div class="center-x" id="createAccount">
-            <a class="center-x" href="Need an account? Sign up here!">Need an account? Sign up here!</a>
+        <button id="loginButton" onclick="login()">Login</button>
+
+        <div id="createAccount">
+            <a routerLink="/register">Need an account? Sign up here!</a>
         </div>
     </div>
     <div id="user_div" class="loggedin-div">
