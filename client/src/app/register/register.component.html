@@ -10,7 +10,7 @@
 
             <img class="bandbase" src="../../assets/BandBaseAlt1.png" alt="BandBase Logo">
             <div id="container">
-                <form>
+                <div>
                     <hr />
                     <input type="name" class="input" maxlength="40" type="text" placeholder="First Name"><br />
                     <input type="name" class="input" maxlength="40" type="text" placeholder="Last Name"><br />
@@ -18,23 +18,24 @@
                     <input type="password" class="input" maxlength="15" type="text" placeholder="Password" id="password_field"><br />
                     <input type="password" class="input" maxlength="15" type="text" placeholder="Re-type password" id="password_conf_field"><br />
                     <hr />
-                    <input type="instruments" class="input" max="200" type="text" placeholder="What instruments do you play?"><br />
-                    <input type="genres" class="input" max="200" type="text" placeholder="Which genres of music do you play?"><br />
-                    <select class="input" name="Playing preferences">
+                    <input type="instruments" class="input" max="200" type="text" placeholder="What instruments do you play?" id="instruments_field"><br />
+                    <input type="genres" class="input" max="200" type="text" placeholder="Which genres of music do you play?" id="genres_field"><br />
+                    <select class="input" name="Playing preferences" id="playing_pref_field">
                         <option value="default">Choose your playing preference</option>
                         <option value="Learner">Learner</option>
                         <option value="Casual">Casual</option>
                         <option value="Amateur">Amateur</option>
                         <option value="Professional">Professional</option>
                     </select>
-                    <textarea class="bio" name="bio" rows="8" cols="50" placeholder="Write a short bio about your experience as a musician."></textarea>
+
+                    <textarea class="bio" name="bio" rows="8" cols="50" placeholder="Write a short bio about your experience as a musician." id="bio_field"></textarea>
                     <hr />
                     <button id="createButton" onclick="create()"> Create Account </button>
                     <div id="back">
                         <a href="LOGIN PAGE URL">Back to Login page</a>
                     </div>
 
-                </form>
+                </div>
             </div>
             <br/>
             <br/>
