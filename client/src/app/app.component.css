@@ -32,6 +32,14 @@ p {
     color: var(--main-red);
 }
 
+.label-title {
+    font-family: var(--main-font);
+    color: var(--main-black);
+    font-size: 30px;
+    margin: 0px;
+    padding: 3px 0px 3px 0px;
+}
+
 /* ---------------------Classes--------------------- */
 
 /*-----------Font Styles----------*/
@@ -51,27 +59,35 @@ p {
     font-size: 40px !important; 
 }
 
+.text-align-left {
+    text-align:left;
+}
+.text-align-center {
+    text-align:center;
+}
+.text-align-right {
+    text-align:right;
+}
 .description {
-    font-size: 20px;
+    font-size: 18px;
     font-family: var(--main-font);
     color: var(--main-black);
 }
 
-.page-title {
-    font-size: 50px;
+.location {
+    font-size: 20px;
     font-family: var(--main-font);
-    color: var(--main-white);
+    color: var(--main-black);
     margin: 0px;
-    padding: 8px;
-    text-shadow: 2px 2px 5px black;
 }
-.page-descr {
-    font-size: 50px;
+
+.page-title {
+    font-size: 65px;
     font-family: var(--main-font);
     color: var(--main-white);
     margin: 0px;
-    padding: 8px;
-    float: left;
+    padding: 0px;
+    text-shadow: 0 0 10px black
 }
 
 
@@ -99,4 +115,25 @@ p {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
+}
+
+/*Padding*/
+.padding-left {
+    padding: 0px 0px 0px 7px;
+}
+
+.padding-right {
+    padding: 0px 10px 0px 0px;
+}
+
+.padding-up {
+    padding: 5px 0px 0px 0px;
+}
+
+.padding-down {
+    padding: 0px 0px 5px 0px;
+}
+
+.padding-left-l {
+    padding: 0px 0px 0px 15px;
 }
