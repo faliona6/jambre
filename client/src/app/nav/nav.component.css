@@ -97,6 +97,13 @@ a:hover {
     border-width: 0px;
 }
 
+.btn-default:active {
+    color: #333;
+    background-color: #222;
+    border-color: var(--main-red);
+    border-width: 0px;
+}
+
   
 
 .user-icon {
