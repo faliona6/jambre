@@ -1,19 +1,19 @@
 {
-  "name": "jam-it",
+  "name": "jambre",
   "version": "1.0.0",
   "description": "jam with other people web app!",
   "main": "server.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/SullivanXiong/jam-it.git"
+    "url": "git+ssh://git@github.com/faliona6/jambre"
   },
   "author": "Sullivan Xiong",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SullivanXiong/jam-it/issues"
+    "url": "https://github.com/faliona6/jambre/issues"
   },
-  "homepage": "https://github.com/SullivanXiong/jam-it#readme",
+  "homepage": "https://github.com/faliona6/jambre#readme",
   "dependencies": {
     "express": "^4.16.4",
     "joi": "^13.1.0",

@@ -87,7 +87,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LmNzcyJ9 */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -98,7 +98,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n  <head>\n\n  </head>\n  <body>\n    <!--  nav.component.ts's selector is app-nav  -->\n    <app-nav *ngIf='showComponent'></app-nav>\n  </body>\n<router-outlet></router-outlet>\n"
+module.exports = "<!DOCTYPE html>\r\n  <head>\r\n\r\n  </head>\r\n  <body>\r\n    <!--  nav.component.ts's selector is app-nav  -->\r\n    <app-nav *ngIf='showComponent'></app-nav>\r\n  </body>\r\n<router-outlet></router-outlet>\r\n"
 
 /***/ }),
 
@@ -208,7 +208,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJob21lL2hvbWUuY29tcG9uZW50LmNzcyJ9 */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */"
 
 /***/ }),
 
@@ -219,7 +219,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  home works!\n</p>\n"
+module.exports = "<p>\r\n  home works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -264,7 +264,7 @@ var HomeComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "input {\r\n    display: block;\r\n}\r\nbutton {\r\n    background: red;\r\n    width: 163px;\r\n    height: 30px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxvZ2luL2xvZ2luLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsWUFBWTtJQUNaLFlBQVk7QUFDaEIiLCJmaWxlIjoibG9naW4vbG9naW4uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImlucHV0IHtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG59XHJcbmJ1dHRvbiB7XHJcbiAgICBiYWNrZ3JvdW5kOiByZWQ7XHJcbiAgICB3aWR0aDogMTYzcHg7XHJcbiAgICBoZWlnaHQ6IDMwcHg7XHJcbn0iXX0= */"
+module.exports = "input {\r\n    display: block;\r\n}\r\nbutton {\r\n    background: red;\r\n    width: 163px;\r\n    height: 30px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGNBQWM7QUFDbEI7QUFDQTtJQUNJLGVBQWU7SUFDZixZQUFZO0lBQ1osWUFBWTtBQUNoQiIsImZpbGUiOiJzcmMvYXBwL2xvZ2luL2xvZ2luLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpbnB1dCB7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxufVxyXG5idXR0b24ge1xyXG4gICAgYmFja2dyb3VuZDogcmVkO1xyXG4gICAgd2lkdGg6IDE2M3B4O1xyXG4gICAgaGVpZ2h0OiAzMHB4O1xyXG59Il19 */"
 
 /***/ }),
 
@@ -275,7 +275,7 @@ module.exports = "input {\r\n    display: block;\r\n}\r\nbutton {\r\n    backgro
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form method=\"POST\" action='/login'>\n  <input type=\"text\" name=\"email\" placeholder=\"Email\">\n  <input type=\"text\" name=\"password\" placeholder=\"Password\">\n  <button type=\"submit\" value=\"Submit\">Log in</button>\n</form>\n<a routerLink=\"/register\">Don't have an account? Sign up.</a>\n"
+module.exports = "<form method=\"POST\" action='/login'>\r\n  <input type=\"text\" name=\"email\" placeholder=\"Email\">\r\n  <input type=\"text\" name=\"password\" placeholder=\"Password\">\r\n  <button type=\"submit\" value=\"Submit\">Log in</button>\r\n</form>\r\n<a routerLink=\"/register\">Don't have an account? Sign up.</a>\r\n"
 
 /***/ }),
 
@@ -297,6 +297,7 @@ var LoginComponent = /** @class */ (function () {
     function LoginComponent() {
     }
     LoginComponent.prototype.ngOnInit = function () {
+        console.log('potato');
     };
     LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -320,7 +321,7 @@ var LoginComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJuYXYvbmF2LmNvbXBvbmVudC5jc3MifQ== */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL25hdi9uYXYuY29tcG9uZW50LmNzcyJ9 */"
 
 /***/ }),
 
@@ -331,7 +332,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav>\n  <ul>\n    <li routerLink='/'>Find Jams</li>\n    <li routerLink='/'>My Bands</li>\n    <li routerLink='/'>About</li>\n  </ul>\n  <!-- <user> {{ user }} </user>-->\n</nav>\n"
+module.exports = "<nav>\r\n  <ul>\r\n    <li routerLink='/'>Find Jams</li>\r\n    <li routerLink='/'>My Bands</li>\r\n    <li routerLink='/'>About</li>\r\n  </ul>\r\n  <!-- <user> {{ user }} </user>-->\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -376,7 +377,7 @@ var NavComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJyZWdpc3Rlci9yZWdpc3Rlci5jb21wb25lbnQuY3NzIn0= */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3JlZ2lzdGVyL3JlZ2lzdGVyLmNvbXBvbmVudC5jc3MifQ== */"
 
 /***/ }),
 
@@ -387,7 +388,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  register works!\n</p>\n"
+module.exports = "<p>\r\n  register works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -486,7 +487,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\SXion\jam-it\client\jam-it\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\SXion\jambre\client\src\main.ts */"./src/main.ts");
 
 
 /***/ })
