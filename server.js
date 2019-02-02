@@ -15,6 +15,7 @@ app.use('/register', express.static(path.join(__dirname, '/client/dist/jam-it'))
 app.use('/home', express.static(path.join(__dirname, '/client/dist/jam-it')));
 app.use('/findbands', express.static(path.join(__dirname, '/client/dist/jam-it')));
 app.use('/profile', express.static(path.join(__dirname, '/client/dist/jam-it')));
+app.use('/createband', express.static(path.join(__dirname, '/client/dist/jam-it')));
 app.use('/onetimeprofilecreation', express.static(path.join(__dirname, '/client/dist/jam-it')));
 
 const port = process.env.PORT || 8010

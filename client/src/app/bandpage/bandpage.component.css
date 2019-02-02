@@ -1,3 +1,39 @@
-#banner-photo{
-    width:100%;
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg)*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.8)), url("../../assets/BannerPhoto.jpg");
+
+  /* Set a specific height */
+  height: 60%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image span{
+    position: relative;
+    top: 83%;
+    left: 1%;
+    color: lightGrey;
+    font-size: 30pt;
+}
+
+.button{
+    padding: 15px 15px 15px 15px;
+    border-radius: 3px;
+    border-width: 0px;
+    background-color: #e35953;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin-bottom: 15px;
+}
+
+.button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.6), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }

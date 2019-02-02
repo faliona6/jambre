@@ -22,5 +22,4 @@ function login() {
 
 function logout() {
     firebase.auth().signOut();
-    window.location.replace('/login')
 }
