@@ -1,4 +1,6 @@
 .background{
+    width: 100%;
+    height: 100%;
     background-color: #BCBCBC;
     background-image: url("../../assets/loginBackground.jpg");
     background-position: top;
@@ -6,8 +8,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0px 0px 0px 0px;
-    width: 100%;
-    height: 100%;
 }
 
 .center{
@@ -17,12 +17,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.center-x{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
 }
 
 .input{
