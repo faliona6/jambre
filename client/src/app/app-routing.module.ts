@@ -4,11 +4,12 @@ import { LoginComponent } from './login/login.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FindbandsComponent } from './findbands/findbands.component';
+import { BandpageComponent } from './bandpage/bandpage.component';
 
 const routes: Routes = [
-  { 
-    path: '', 
-    redirectTo: '/login', 
+  {
+    path: '',
+    redirectTo: '/login',
     pathMatch: 'full'
   },
   {
@@ -24,8 +25,8 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'findbands',
-    component: FindbandsComponent
+    path: 'bandpage',
+    component: BandpageComponent
   }
 ];
 
