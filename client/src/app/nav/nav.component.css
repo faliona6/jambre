@@ -23,6 +23,10 @@ a:active {
     text-decoration: underline;
 }
 
+.user-name {
+  font-weight: bold;
+}
+
 
 /* ---------------------Navbar--------------------- */
 #nav-bar {
@@ -41,10 +45,13 @@ a:active {
     width: auto;
 }
 
-.nav-label {
+.navbar-inverse .navbar-nav>li>a {
     color: #e35953;
-    /* padding: 20px 0px 20px 40px;
-    display: inline; */
+}
+
+.navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
 
 .user-icon {
