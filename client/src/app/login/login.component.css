@@ -1,0 +1,8 @@
+input {
+    display: block;
+}
+button {
+    background: red;
+    width: 163px;
+    height: 30px;
+}
