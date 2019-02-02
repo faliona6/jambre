@@ -23,6 +23,8 @@ app.use('/home', express.static(path.join(__dirname, '/client/dist/jam-it')));
 
 app.use('/findbands', express.static(path.join(__dirname, '/client/dist/jam-it')));
 // app.use('/', findbands);
+app.use('/profile', express.static(path.join(__dirname, '/client/dist/jam-it')));
+// app.use('/', findbands);
 
 const port = process.env.PORT || 8010
 
