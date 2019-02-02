@@ -14,6 +14,7 @@ import { AngularFireModule } from 'angularfire2'
 import { environment } from './environment/environment';
 import { AngularFireDatabaseModule } from 'angularfire2/database'
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { BandpageComponent } from './bandpage/bandpage.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
     NavComponent,
     RegisterComponent,
     HomeComponent,
-    FindbandsComponent
+    FindbandsComponent,
+    BandpageComponent
   ],
   imports: [
     BrowserModule,
