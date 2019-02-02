@@ -1,0 +1,22 @@
+{
+  "name": "jam-it",
+  "version": "1.0.0",
+  "description": "jam with other people web app!",
+  "main": "server.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SullivanXiong/jam-it.git"
+  },
+  "author": "Sullivan Xiong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SullivanXiong/jam-it/issues"
+  },
+  "homepage": "https://github.com/SullivanXiong/jam-it#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "joi": "^13.1.0",
+    "nodemon": "^1.18.9"
+  }
+}
