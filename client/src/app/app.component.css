@@ -1,0 +1,80 @@
+/* Universal Styles for Jambre Website */
+
+:root {
+    --main-black: #2a2929;
+    --main-red: #e35953;
+    --main-yellow: #f2c06f;
+    --main-green: #c3d190;
+    --main-mauve: #d8bcbc;
+    --main-white: white;
+
+    --main-font: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    font-family: var(--main-font);
+    color: var(--main-black);
+}
+
+body {
+    margin: 0px;
+}
+
+.label {
+    font-family: var(--main-font);
+    color: var(--main-red);
+}
+
+/* ---------------------Classes--------------------- */
+
+/*-----------Font Styles----------*/
+.font-size-xs {
+    font-size: 15px;
+}
+.font-size-s {
+    font-size: 20px;
+}
+.font-size-m {
+    font-size: 18px;
+}
+.font-size-l {
+    font-size: 40px;
+}
+.font-size-xl {
+    font-size: 40px;
+}
+
+.description {
+    font-size: 20px;
+    font-family: var(--main-font);
+    color: var(--main-black);
+}
+
+.page-title {
+    font-size: 40px;
+    font-family: var(--main-font);
+    color: var(--main-white);
+}
+
+
+/*Formatting*/
+
+.flow-left {
+    float: left;
+}
+.flow-right {
+    float: right;
+}
+.flow-center {
+    float: center;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+

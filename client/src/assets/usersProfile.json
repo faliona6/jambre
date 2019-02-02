@@ -1,3 +1,23 @@
 {
-    
+    "users": [
+        {
+            "id": "010101010",
+            "name": "Fiona Soetrisno",
+            "location": "San Luis Obispo",
+            "email": "fiona.soetrisno@gmail.com",
+            "phone": "24324342343",
+            "instruments": [
+                "violin",
+                "piano"
+            ],
+            "genres": [
+                "jazz",
+                "classical"
+            ],
+            "bands": [
+                "0101022",
+                "2323232"
+            ]
+        }
+    ]
 }
