@@ -10,6 +10,9 @@ export class LoginComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {
+        var e = document.createElement("script");
+        e.src = './firebase.js';
+        e.type="text/javascript";
         firebase.auth().onAuthStateChanged(function(user) {
             if (user) {
                 // User is signed in.
