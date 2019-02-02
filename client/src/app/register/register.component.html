@@ -1,21 +1,45 @@
+
 <div class="background">
     <div id="header">
-        <img class="bandbase" src="../../assets/CreateAccount.png" alt="Create Account word art">
-    <div id="login_div">
-    <div id="container">
-        <hr/>
-        <input type="email" class="input" type="text" placeholder="Email" id="email_field"><br />
-        <input type="password" class="input" type="text" placeholder="Password" id="password_field"><br />
-        <input type="password" class="input" type="text" placeholder="Re-type password" id="password_conf_field">
-        <button id="createButton" onclick="create()"> Create Account </button>
-        <div id="back">
-            <a href="LOGIN PAGE URL" margin-bottom="10px">Back to Login page</a>
-        </div>
-        <br/>
-        <hr/>
-    </div>
 
-</div>
+        <div id="login_div">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+            <div id="container">
+                <img class="bandbase" src="../../assets/CreateAccount.png" alt="Create Account word art">
+                <form>
+                    <hr />
+                    <input type="email" class="input" maxlength="15" type="text" placeholder="Email" id="email_field"><br />
+                    <input type="password" class="input" maxlength="15" type="text" placeholder="Password" id="password_field"><br />
+                    <input type="password" class="input" maxlength="15" type="text" placeholder="Re-type password" id="password_conf_field"><br />
+                    <hr />
+                    <input type="instruments" class="input" max="200" type="text" placeholder="What instruments do you play?"><br />
+                    <input type="genres" class="input" max="200" type="text" placeholder="Which genres of music do you play?"><br />
+                    <select class="input" name="Playing preferences">
+                        <option value="default">Choose your playing preference</option>
+                        <option value="Learner">Learner</option>
+                        <option value="Casual">Casual</option>
+                        <option value="Amateur">Amateur</option>
+                        <option value="Professional">Professional</option>
+                    </select>
+
+                    <textarea class="bio" name="bio" rows="8" cols="50" placeholder="Write a short bio about your experience as a musician."></textarea>
+                    <hr />
+                    <button id="createButton" onclick="create()"> Create Account </button>
+                    <div id="back">
+                        <a href="LOGIN PAGE URL">Back to Login page</a>
+                    </div>
+
+                </form>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+
+        </div>
 
 <div id="user_div" class="loggedin-div">
     <h3 style="margin-top:0px;">Welcome User</h3>
@@ -23,4 +47,4 @@
     <button onclick="logout()">Logout</button>
   </div>
 
-<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>

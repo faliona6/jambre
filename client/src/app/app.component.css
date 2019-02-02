@@ -103,11 +103,43 @@ p {
 }
 
 .line {
-    width: 800px;
+    width: 80%;
     height: 1px;
     background: grey;
     margin: 0px;
     text-align:center;
+}
+
+/*Displaying bands*/
+#band-img {
+    width: 380px;
+    height: auto;
+    border-radius: 3px;
+}
+
+#bands {
+    padding: 0px 0px 50px 0px
+}
+
+#band-info {
+    width: 380px;
+    height: auto;
+}
+
+.float-on-image {
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 30%;
+    width: 100%;
+    color:white;
+}
+
+.band-desc {
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    width: 800px;
 }
 
 
