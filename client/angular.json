@@ -25,7 +25,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": ["/src/app/login/firebase.js"],
+            "scripts": ["./src/app/login/firebase.js"],
             "es5BrowserSupport": true
           },
           "configurations": {
