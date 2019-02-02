@@ -210,6 +210,26 @@ p {
     margin-bottom: 15px;
 }
 
+.button-main{
+    padding: 8px 50px 8px 50px;
+    border-radius: 3px;
+    border-width: 0px;
+    background-color: var(--main-red);
+    font-size: 18px;
+    font-family: var(--main-font);
+    color: var(--main-black);
+
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin-bottom: 15px;
+}
+
+.button-main:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.3), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    color:white;
+}
+
 .button:hover{
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.6), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
