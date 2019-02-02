@@ -7,7 +7,7 @@ const fs = require('fs');
 const app = express();
 
 app.use(express.static(path.join(__dirname, '/client/dist/jam-it')));
-app.use(express.static(path.join(__dirname, '/client/src/app/register/index.js')));
+app.use(express.static(path.join(__dirname, '/client/src')));
 
 
 app.use('/login', express.static(path.join(__dirname, '/client/dist/jam-it')));
@@ -16,6 +16,7 @@ app.use('/home', express.static(path.join(__dirname, '/client/dist/jam-it')));
 app.use('/findbands', express.static(path.join(__dirname, '/client/dist/jam-it')));
 app.use('/profile', express.static(path.join(__dirname, '/client/dist/jam-it')));
 app.use('/createband', express.static(path.join(__dirname, '/client/dist/jam-it')));
+app.use('/onetimeprofilecreation', express.static(path.join(__dirname, '/client/dist/jam-it')));
 
 const port = process.env.PORT || 8010
 
