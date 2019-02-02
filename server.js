@@ -16,6 +16,9 @@ app.use('/register', express.static(path.join(__dirname, '/client/dist/jam-it'))
 app.use('/home', express.static(path.join(__dirname, '/client/dist/jam-it')));
 // app.use('/', home);
 
+app.use('/findbands', express.static(path.join(__dirname, '/client/dist/jam-it')));
+// app.use('/', findbands);
+
 const port = process.env.PORT || 8010
 
 app.listen(port, () => console.log(`Listening on port ${port}...`));
