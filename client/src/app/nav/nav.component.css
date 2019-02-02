@@ -50,6 +50,55 @@ a:hover {
     padding-bottom: 15px;
 }
 
+.dropdown-menu {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.btn-default {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #222;
+}
+
+.open > .dropdown-toggle.btn-default {
+    color: #333;
+    background-color: #222;
+    border-color: #ffffff;
+    border-width: 0px
+}
+
+.btn {
+    display: inline-block;
+    padding: 0px 0px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: none;
+    border-radius: none;
+    background-color: #222;
+}
+
+.btn-default:hover {
+    color: #333;
+    background-color: #222;
+    border-color: var(--main-red);
+    border-width: 0px;
+}
+
+  
+
 .user-icon {
     width: 45px;
     height: auto;

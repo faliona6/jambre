@@ -29,8 +29,22 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span style="font-size:1.5em;" class="glyphicon glyphicon-bell" aria-hidden="true"></span> <span class="badge">3</span></a></li>
-        <li><img class="user-icon flow-right" src="../../assets/profilepic.jpg"></li>
-        <li><a style="padding:20px 15px 15px"class="user-name" routerLink='/'>FIONA</a></li>
+        <li>
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <img class="user-icon flow-right" src="../../assets/profilepic.jpg">
+            <!-- Dropdown -->
+          </button>
+          <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Messages</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </div>
+        </li>
+        <!-- <li><a style="padding:20px 15px 15px"class="user-name" routerLink='/'>FIONA</a></li> -->
       </ul>
     </div>
   </div>
