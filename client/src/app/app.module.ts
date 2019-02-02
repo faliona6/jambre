@@ -10,6 +10,7 @@ import { NavComponent } from './nav/nav.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { FindbandsComponent } from './findbands/findbands.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FindbandsComponent } from './findbands/findbands.component';
     NavComponent,
     RegisterComponent,
     HomeComponent,
-    FindbandsComponent
+    FindbandsComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
