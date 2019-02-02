@@ -1,3 +1,5 @@
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuth } from 'angularfire2/auth';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,48 +9,45 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-    constructor() { }
+    constructor(private firebase: AngularFireModule, private auth: AngularFireAuth) { }
 
     ngOnInit() {
-        var e = document.createElement("script");
-        e.src = './firebase.js';
-        e.type="text/javascript";
-        firebase.auth().onAuthStateChanged(function(user) {
-            if (user) {
-                // User is signed in.
-                document.getElementById("user_div").style.display = "block";
-                document.getElementById("login_div").style.display = "none";
-                var user = firebase.auth().currentUser;
+        // this.firebase.auth().onAuthStateChanged(function(user) {
+        //     if (user) {
+        //         // User is signed in.
+        //         document.getElementById("user_div").style.display = "block";
+        //         document.getElementById("login_div").style.display = "none";
+        //         var user = this.firebase.auth().currentUser;
 
-                if (user != null) {
-                    var email_id = user.email;
-                    document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
-                }
-            }
+        //         if (user != null) {
+        //             var email_id = user.email;
+        //             document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
+        //         }
+        //     }
 
-            else {
-                // No user is signed in.
-                document.getElementById("user_div").style.display = "none";
-                document.getElementById("login_div").style.display = "block";
-            }
-        });
+        //     else {
+        //         // No user is signed in.
+        //         document.getElementById("user_div").style.display = "none";
+        //         document.getElementById("login_div").style.display = "block";
+        //     }
+        // });
 
-        function login() {
-            var userEmail = document.getElementById("email_field").value;
-            var userPass = document.getElementById("password_field").value;
+        // function login() {
+        //     var userEmail = document.getElementById("email_field").value;
+        //     var userPass = document.getElementById("password_field").value;
 
-            firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
-                // Handle Errors here.
-                var errorCode = error.code;
-                var errorMessage = error.message;
-                window.alert("Error : " + errorMessage);
-                // Do other stuff??
-            });
-        }
+        //     this.firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
+        //         // Handle Errors here.
+        //         var errorCode = error.code;
+        //         var errorMessage = error.message;
+        //         window.alert("Error : " + errorMessage);
+        //         // Do other stuff??
+        //     });
+        // }
 
-        function logout() {
-            firebase.auth().signOut();
-        }
+        // function logout() {
+        //     this.firebase.auth().signOut();
+        // }
     }
 
 }

@@ -1,5 +1,4 @@
 <div class="background">
-    <script src="./firebase.js"></script>
     <div class="center" id="login_div" class="main-div">
         <input type="email" class="input" type="text" placeholder="Username" id="email_field"><br />
         <input type="password" class="input" type="text" placeholder="Password" id="password_field">
@@ -18,20 +17,4 @@
         <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
         <button onclick="logout()">Logout</button>
     </div>
-
-
-
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyDtJrNKruPz74uXLW6PnGsWOv9bVQsS9ng",
-            authDomain: "bandbase-26533.firebaseapp.com",
-            databaseURL: "https://bandbase-26533.firebaseio.com",
-            projectId: "bandbase-26533",
-            storageBucket: "bandbase-26533.appspot.com",
-            messagingSenderId: "962953801879"
-        };
-        firebase.initializeApp(config);
-    </script>
-    <script src="index.js"></script>
 </div>
