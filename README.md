@@ -1,2 +1,2 @@
-# jambre
-Make some fun jamz
+# Jambre
+Make some fun jamz~
