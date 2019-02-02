@@ -1,6 +1,6 @@
 /* Universal Styles for Jambre Website */
 
-:root {
+::ng-deep :root {
     --main-black: #2a2929;
     --main-red: #e35953;
     --main-yellow: #f2c06f;
@@ -16,8 +16,10 @@ p {
     color: var(--main-black);
 }
 
-body {
+::ng-deep body {
     margin: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 .label {
@@ -76,5 +78,3 @@ body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-
-
