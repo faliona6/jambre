@@ -1,17 +1,37 @@
 <div class="background">
-    <div class="center">
-        <form method="POST" action='/login'>
-            <input class="input" type="text" placeholder="Email" name="email"><br/>
-            <input class="input" type="text" placeholder="Password" name="password">
-            <br/>
-            <button class="center-x" id="loginButton" onclick="dothis">Login</button>
-        </form>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <div class="center" id="login_div" class="main-div">
+        <input type="email" class="input" type="text" placeholder="Username" id="email_field"><br />
+        <input type="password" class="input" type="text" placeholder="Password" id="password_field">
+        <br />
 
-        <br/>
-        <br/>
-        <br/>
+        <button class="center-x" id="loginButton" onclick="login()">Login</button>
+        <br />
+        <br />
+        <br />
         <div class="center-x" id="createAccount">
-            <a class="center-x" routerLink="/register">Need an account? Sign up here!</a>
+            <a class="center-x" href="Need an account? Sign up here!">Need an account? Sign up here!</a>
         </div>
     </div>
+    <div id="user_div" class="loggedin-div">
+        <h3>Welcome User</h3>
+        <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDtJrNKruPz74uXLW6PnGsWOv9bVQsS9ng",
+            authDomain: "bandbase-26533.firebaseapp.com",
+            databaseURL: "https://bandbase-26533.firebaseio.com",
+            projectId: "bandbase-26533",
+            storageBucket: "bandbase-26533.appspot.com",
+            messagingSenderId: "962953801879"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="index.js"></script>
 </div>
