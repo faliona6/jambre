@@ -9,7 +9,7 @@ const router = express.Router();
 
 router.use(express.static(path.join(__dirname, '/public')));
 
-let usersAPI = fs.readFileSync('./assets/user-data.json', (err) => {
+let usersAPI = fs.readFileSync('./client/src/assets/loginInfo.json', (err) => {
     if (err)
         return console.log(err);
 });
