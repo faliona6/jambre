@@ -9,110 +9,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-database.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-messaging.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-functions.js"></script>
-
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyDtJrNKruPz74uXLW6PnGsWOv9bVQsS9ng",
-        authDomain: "bandbase-26533.firebaseapp.com",
-        databaseURL: "https://bandbase-26533.firebaseio.com",
-        projectId: "bandbase-26533",
-        storageBucket: "bandbase-26533.appspot.com",
-        messagingSenderId: "962953801879"
-      };
-      firebase.initializeApp(config);
-      firebase.auth().onAuthStateChanged(function(user) {
-        if (user) {
-          // User is signed in.
-          document.getElementById("user_div").style.display = "block";
-          document.getElementById("login_div").style.display = "none";
-          var user = firebase.auth().currentUser;
-
-          if(user != null){
-            var email_id = user.email;
-            document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
-          }
-        }
-
-        else {
-          // No user is signed in.
-          document.getElementById("user_div").style.display = "none";
-          document.getElementById("login_div").style.display = "block";
-        }
-      });
-
-      function create(){
-        var userEmail = document.getElementById("email_field").value;
-        var userPass = document.getElementById("password_field").value;
-        var userPassConf = document.getElementById("password_conf_field").value;
-
-          if (userPassConf == userPass) {
-              firebase.auth().createUserWithEmailAndPassword(userEmail, userPass).catch(function(error) {
-              // Handle Errors here.
-              var errorCode = error.code;
-              var errorMessage = error.message;
-              window.alert("Error : " + errorMessage);
-              // Do other stuff??
-              });
-          }
-          else {
-              window.alert("Error : Passwords do not match");
-          }
-      }
-
-      function logout(){
-        firebase.auth().signOut();
-      }
-  </script>
-  <script>
-      firebase.auth().onAuthStateChanged(function(user) {
-          if (user) {
-              // User is signed in.
-              document.getElementById("user_div").style.display = "block";
-              document.getElementById("login_div").style.display = "none";
-              var user = firebase.auth().currentUser;
-
-              if (user != null) {
-                  var email_id = user.email;
-                  document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
-              }
-          }
-
-          else {
-              // No user is signed in.
-              document.getElementById("user_div").style.display = "none";
-              document.getElementById("login_div").style.display = "block";
-          }
-      });
-
-      function login() {
-          var userEmail = document.getElementById("email_field");
-          var userPass = document.getElementById("password_field");
-
-          firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
-              // Handle Errors here.
-              var errorCode = error.code;
-              var errorMessage = error.message;
-              window.alert("Error : " + errorMessage);
-              // Do other stuff??
-          });
-      }
-
-      function logout() {
-          firebase.auth().signOut();
-      }
-  </script>
 </head>
 <body>
   <app-root></app-root>
 <script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="es2015-polyfills.js" nomodule></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="scripts.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-functions.js"></script>
+<script src="registerFirebase.js"></script> 
+<script src="loginFirebase.js"></script>
 </html>
