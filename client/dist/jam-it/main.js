@@ -381,7 +381,7 @@ module.exports = ".background{\r\n    width: 100%;\r\n    height: 100%;\r\n    b
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"background\">\r\n    <div class=\"center\" id=\"login_div\" class=\"main-div\">\r\n        <input type=\"email\" class=\"input\" type=\"text\" placeholder=\"Username\" id=\"email_field\"><br />\r\n        <input type=\"password\" class=\"input\" type=\"text\" placeholder=\"Password\" id=\"password_field\">\r\n        <br />\r\n\r\n        <button class=\"center-x\" id=\"loginButton\" onclick=\"login()\">Login</button>\r\n        <br />\r\n        <br />\r\n        <br />\r\n        <div class=\"center-x\" id=\"createAccount\">\r\n            <a class=\"center-x\" href=\"Need an account? Sign up here!\">Need an account? Sign up here!</a>\r\n        </div>\r\n    </div>\r\n    <div id=\"user_div\" class=\"loggedin-div\">\r\n        <h3>Welcome User</h3>\r\n        <p id=\"user_para\">Welcome to Firebase web login Example. You're currently logged in.</p>\r\n        <button onclick=\"logout()\">Logout</button>\r\n    </div>\r\n</div>\r\n"
+module.exports = "<script src=\"../../firebaseAuth.js\"></script>\r\n<div class=\"background\">\r\n    <div class=\"center\" id=\"login_div\" class=\"main-div\">\r\n        <input type=\"email\" class=\"input\" type=\"text\" placeholder=\"Username\" id=\"email_field\"><br />\r\n        <input type=\"password\" class=\"input\" type=\"text\" placeholder=\"Password\" id=\"password_field\">\r\n        <br />\r\n\r\n        <button class=\"center-x\" id=\"loginButton\" onclick=\"login()\">Login</button>\r\n        <br />\r\n        <br />\r\n        <br />\r\n        <div class=\"center-x\" id=\"createAccount\">\r\n            <a class=\"center-x\" href=\"Need an account? Sign up here!\">Need an account? Sign up here!</a>\r\n        </div>\r\n    </div>\r\n    <div id=\"user_div\" class=\"loggedin-div\">\r\n        <h3>Welcome User</h3>\r\n        <p id=\"user_para\">Welcome to Firebase web login Example. You're currently logged in.</p>\r\n        <button onclick=\"logout()\">Logout</button>\r\n    </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -406,42 +406,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var LoginComponent = /** @class */ (function () {
-    function LoginComponent(firebase, auth) {
+    function LoginComponent(firebase, afAuth) {
         this.firebase = firebase;
-        this.auth = auth;
+        this.afAuth = afAuth;
     }
     LoginComponent.prototype.ngOnInit = function () {
-        // this.firebase.auth().onAuthStateChanged(function(user) {
-        //     if (user) {
-        //         // User is signed in.
-        //         document.getElementById("user_div").style.display = "block";
-        //         document.getElementById("login_div").style.display = "none";
-        //         var user = this.firebase.auth().currentUser;
-        //         if (user != null) {
-        //             var email_id = user.email;
-        //             document.getElementById("user_para").innerHTML = "Welcome User : " + email_id;
-        //         }
-        //     }
-        //     else {
-        //         // No user is signed in.
-        //         document.getElementById("user_div").style.display = "none";
-        //         document.getElementById("login_div").style.display = "block";
-        //     }
-        // });
-        // function login() {
-        //     var userEmail = document.getElementById("email_field").value;
-        //     var userPass = document.getElementById("password_field").value;
-        //     this.firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
-        //         // Handle Errors here.
-        //         var errorCode = error.code;
-        //         var errorMessage = error.message;
-        //         window.alert("Error : " + errorMessage);
-        //         // Do other stuff??
-        //     });
-        // }
-        // function logout() {
-        //     this.firebase.auth().signOut();
-        // }
     };
     LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
