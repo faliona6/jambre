@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bandbase</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    Online Styles    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="http://allfont.net/allfont.css?fonts=montserrat-black"  type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <!--    Global styles/assets    -->
+    <link rel="stylesheet" type="text/css" href="styles/nav.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/bandpage.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/index.css"/>
+    <link rel='shortcut icon' type="image/png" href="/assets/bandbase-logo-shadow.png">
+    <!--    JQuery/Popper/Bootstrap    -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <!--   Navigation Bar Elements    -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-nav-demo">
+                <ul class="nav navbar-nav">
+                    <li><img src="/assets/bandbaselogofinal.png" alt="Bandbase Logo" width="auto" height="60px" style="margin-top:5px"></li>
+                    <li><a href='/' class="nav-label">FIND JAMS</a></li>
+                    <li><a href='/createband' class="nav-label">CREATE A BAND</a></li>
+                    <li><a href='/about' class="nav-label">ABOUT</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span style="font-size:1.5em;" class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+                            <span class="badge">3</span></a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <img class="user-icon flow-right" src="/assets/profilepic.jpg">
+                                <!-- Dropdown -->
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                <li><a href="/profile">Profile</a></li>
+                                <li><a href="#">Messages</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Settings</a></li>
+                                <li><a href="/login" onclick='logout()'>Log Out</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- <li><a style="padding:20px 15px 15px"class="user-name" href='/'>FIONA</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav><!--    Body    -->
+
+    <div class="hero-image">
+        <span class="band-name">SAMMY MILLER AND THE CONGREGATION</span>
+        <span class="subtext"> JOYFUL JAZZ—MUSIC THAT FEELS GOOD </span>
+    </div>
+    
+    <div id="band-information" class="height:auto">
+        <div id="left-column">
+            <h3>Description</h3>
+            <p class="description" id="Description">
+                A native of Los Angeles, Grammy® nominated drummer Sammy Miller has become known for his
+                relentless focus on making music that feels good as a drummer, singer, and bandleader.
+                Upon completing his Master’s at The Juilliard School, Sammy formed his ensemble, The
+                Congregation. As a band, they share the power of community through their music—joyful jazz.
+            </p>
+    
+            <div id="left-information">
+                <h4>LOCATION</h4>
+                <p class="description">Brooklyn, NY</p>
+                <h4>LOOKING FOR</h4>
+                <p class="description">Trumpet, Percussionist</p>
+                <h4>GENRES</h4>
+                <p class="description">Jazz</p>
+            </div>
+            <div id="right-information">
+                <h4>LEVEL</h4>
+                <p class="description">Professional</p>
+                <h4>NEXT PERFORMANCE</h4>
+                <p class="description">Toronto, CA - Sony Center 4/5/2019</p>
+            </div>
+            <br/>
+            <!-- <video width="320" height="240" controls>
+                <src="../../assets/chrisalon.mp4">
+            </video> -->
+        </div>
+        <div id="right-column">
+            <img class="profile-pic" src="/assets/defaultProfilePic.jpg"/>
+            <p class="label">
+                [name],[age]
+            </p>
+            <p class="label">
+                [instrument]
+            </p>
+            <img class="profile-pic" src="/assets/defaultProfilePic.jpg"/>
+            <p class="label">
+                [name],[age]
+            </p>
+            <p class="label">
+                [instrument]
+            </p>
+            <img class="profile-pic" src="/assets/defaultProfilePic.jpg"/>
+            <p class="label">
+                [name],[age]
+            </p>
+            <p class="label">
+                [instrument]
+            </p>
+            <br/>
+            <br/>
+        </div>
+    </div>
+    
+    <div style="overflow:auto; width:100%; height:2px; margin-top:30px">
+        <div class="line center-x">
+        </div>
+    </div>
+    
+    
+    <div id="band-discussion">
+        <div class="header" style="padding:40px 0px 10px 0px">
+            <p>BAND DISCUSSION</p>
+        </div>
+    
+        <div class="post">
+            <img class="user-icon"src="../../assets/profilepic.jpg">
+            <br>
+            <div id="box">
+                <p class="location">Fiona Soetrisno</p>
+                <p class="decsription">Lorem ipsum dolor sit amet, hello there no has exerci mandamus interpretaris,
+                                ei malis indoctum intellegam nam. wahoo
+                                Erant qualisque an nec. No pri nullam ver
+                                prodesset, cum et nostrum oportere. </p>
+                <p>1/31/19 12:30</p>
+            </div>
+        </div>
+    
+    
+        <div class="post">
+            <img class="user-icon"src="../../assets/profilepic.jpg">
+            <br>
+            <div id="box">
+                <p class="location">Fiona Soetrisno</p>
+                <p class="decsription">Lorem ipsum dolor sit amet, hello there no has exerci mandamus interpretaris,
+                                ei malis indoctum intellegam nam. wahoo
+                                Erant qualisque an nec. No pri nullam ver
+                                prodesset, cum et nostrum oportere. </p>
+                <p>1/31/19 12:30</p>
+            </div>
+        </div>
+    
+    
+    
+        <div class="header" style="padding:40px 0px 10px 0px">
+            <p>WRITE A POST</p>
+        </div>
+    
+        <div class="post" >
+            <textarea class="write-post-box"rows="8" cols="50" placeholder="Write a post!"></textarea>
+            <input class="button-main" style="margin:0px 0px 20px 20px" type="submit" value="Submit">
+        </div>
+    </div>
+
+    <footer class="bs-docs-footer">
+        <!--    Footer    -->
+        <div class="container">
+            <ul class="bs-docs-footer-links">
+                <li><a href="https://github.com/faliona6/jambre">GitHub</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-functions.js"></script>
+<script src="javascript/initFirebase.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+</html>
