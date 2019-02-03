@@ -99,29 +99,33 @@
     </div>
 
     <div>
-        <p class="header">FIONA'S BANDS</p>
+        <p class="header">USER BANDS</p>
     </div>
 
     <!--Suggested Bands-->
 
     <div id="bands" style="overflow:auto margin-bottom">
-        <div class="band-desc center-x" style="display:inline-block;">
-            <img id="band-img" class="flow-left" src="/assets/band.jpg" style="margin-bottom:70px">
-            <div id="band-info" class="flow-right">
-                <p id="band-name" class="flow-left label-title text-align-left">THE CONSOULS</p>
-                <p id="band-location" class="flow-left location text-align-left">Located in Cal Poly, San Luis
-                    Obispo</p>
-                <p id="band-needed-instr" class="flow-left location text-align-left">Looking for: Violin, Piano</p>
-                <p id="band-description" class="flow-left description text-align-left padding-up padding-left-l">Lorem
-                    ipsum
-                    dolor sit amet, hello there no has exerci mandamus interpretaris,
-                    ei malis indoctum intellegam nam. wahoo
-                    Erant qualisque an nec. No pri nullam ver
-                    prodesset, cum et nostrum oportere. </p>
-            </div>
-        </div>
     </div>
-    <button id="loginButton" onclick="getUserData()">Login</button>
+
+    <template>
+        <div data-aos="fade-up" id="bands" style="overflow:auto;display:block;">
+            <div class="band-desc">
+                <img class="band-img flow-left" style="margin:0px 0px 60px 0px" onclick="sendToBandpage()" src="assets/band.jpg">
+                <div id="band-info" style="margin-bottom: 60px"class="band-info flow-right">
+                    <p class="band-name flow-left label-title text-align-left">THE CONSOULS</p>
+                    <p class="band-location flow-left location text-align-left">Located in Cal Poly, San Luis Obispo</p>
+                    <p class="band-needed-instr flow-left location text-align-left">Looking for: Violin, Piano</p>
+                    <p class="band-description flow-left description text-align-left padding-up padding-left-l">Lorem
+                        ipsum dolor sit amet, hello there no has exerci mandamus interpretaris,
+                        ei malis indoctum intellegam nam. wahoo
+                        Erant qualisque an nec. No pri nullam ver
+                        prodesset, cum et nostrum oportere. </p>
+                    <br>
+                </div>
+            </div>
+            <br>
+        </div>
+    </template>
 
     <!-- <div class="container">
         <div class="row">
