@@ -22,7 +22,19 @@
 <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-messaging.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-functions.js"></script>
-<script src="registerFirebase.js"></script> 
-<script src="loginFirebase.js"></script>
-<script src="loginStatusFirebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDtJrNKruPz74uXLW6PnGsWOv9bVQsS9ng",
+      authDomain: "bandbase-26533.firebaseapp.com",
+      databaseURL: "https://bandbase-26533.firebaseio.com",
+      projectId: "bandbase-26533",
+      storageBucket: "bandbase-26533.appspot.com",
+      messagingSenderId: "962953801879"
+    };
+    firebase.initializeApp(config);
+</script>
+<script src="javascript/registerFirebase.js"></script>
+<script src="javascript/loginFirebase.js"></script>
+<script src="javascript/profileFirebase.js"></script>
 </html>
