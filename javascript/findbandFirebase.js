@@ -55,7 +55,9 @@ function fillPage() {
             console.log( data);
 
             y.getElementsByClassName('band-description')[0].innerHTML = data["description"];
-            y.getElementsByClassName('band-description')[0].onClick = 'sendToBandpage(' + data["name"] + ')';
+            y.getElementsByClassName('band-img')[0].setAttribute( "onclick", "sendToBandpage('999')");
+            // y.getElementsByClassName('band-img')[0].onClick = sendToBandpage(data["name"]);
+            //y.$(".band-img").click(sendToBandpage(data["name"]));
             y.getElementsByClassName('band-name')[0].innerHTML = data["name"].toUpperCase();
             y.getElementsByClassName('band-location')[0].innerHTML = "Located in " + data["location"];
             y.getElementsByClassName('band-needed-instr')[0].innerHTML = "Looking for: " + data["lookingForInstruments"];
@@ -71,5 +73,7 @@ function fillPage() {
 }
 
 function sendToBandpage(id) {
-    window.location.replace('/bandpage?name=' + id)
+    // if (event.onClick()) {
+    //     window.location.replace('/bandpage?name=' + id)
+    // }
 }
