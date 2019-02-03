@@ -1,3 +1,4 @@
+
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
         fillProfileOnStart();
@@ -10,10 +11,11 @@ function fillProfileOnStart() {
 
 
 //Returns dictionary of user data. Access data["name"]
-function getUserData() {
+function applyBandData() {
     var db = firebase.firestore();
     var user = firebase.auth().currentUser;
-    var docRef = db.collection("users").doc(user.email);
+
+    var bandNames=["hello"];
 
     docRef.get().then(function(doc) {
         if (doc.exists) {
@@ -38,7 +40,6 @@ function getUserData() {
             console.log("No document");
         }
 
-        
-    })
 
+    })
 }
