@@ -9,7 +9,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     var userBio = document.getElementById("bio_field").value;
 // Add a new document in collection "cities"
 var db = firebase.firestore();
-    db.collection("test").doc(user.email).set({
+    db.collection("users").doc(user.email).set({
     instruments: userInstruments,
     genres: userGenres,
     preferences: userPlayingPrefs,
