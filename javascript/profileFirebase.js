@@ -6,14 +6,19 @@ firebase.auth().onAuthStateChanged(function(user) {
     }
 });
 
+function fillProfileOnStart() {
+    getUserData()
+}
+
+
 //Returns dictionary of user data. Access data["name"]
 function getUserData() {
     var db = firebase.firestore();
     var user = firebase.auth().currentUser;
     var docRef = db.collection("users").doc(user.email);
 
-    docRef.get().then(doc => {
-        if (doc) {
+    docRef.get().then(function(doc) {
+        if (doc.exists) {
             var data = doc.data();
             console.log(data);
 
@@ -30,6 +35,8 @@ function getUserData() {
         else {
             console.log("No document");
         }
+
+
     })
 
 }
