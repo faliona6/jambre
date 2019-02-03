@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { FindbandsComponent } from './findbands/findbands.component';
 import { BandpageComponent } from './bandpage/bandpage.component';
 import { ProfileComponent } from './profile/profile.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'createband',
     component: CreatebandComponent
+  },
+  {
+    path: 'footer',
+    component: FooterComponent
   }
 ];
 
