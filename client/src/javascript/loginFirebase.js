@@ -2,7 +2,9 @@ firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
         var user = firebase.auth().currentUser;
         if ($(location).attr("pathname") === '/login' || $(location).attr("pathname") === '/register') {
-            window.location.replace('/findbands')
+            setTimeout(() => {
+                window.location.replace('/findbands');
+            }, 1000);
         }
     }
 });
