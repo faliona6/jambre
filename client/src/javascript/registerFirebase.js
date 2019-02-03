@@ -7,29 +7,21 @@ firebase.auth().onAuthStateChanged(function(user) {
     var userGenres = document.getElementById("genres_field").value;
     var userPlayingPrefs = document.getElementById("playing_pref_field").value;
     var userBio = document.getElementById("bio_field").value;
-// Add a new document in collection "cities"
-var db = firebase.firestore();
+    var db = firebase.firestore();
     db.collection("users").doc(user.email).set({
-    instruments: userInstruments,
-    genres: userGenres,
-    preferences: userPlayingPrefs,
-    bio: userBio,
-    name: userName
-})
-.then(function() {
-    console.log("Document successfully written!");
-})
-.catch(function(error) {
-    console.error("Error writing document: ", error);
-});
-
-    window.location.href = "http://google.com";
-    if(user != null){
-      var email_id = user.email;
-
-    }
+        instruments: userInstruments,
+        genres: userGenres,
+        preferences: userPlayingPrefs,
+        bio: userBio,
+        name: userName
+    })
+    .then(function() {
+        console.log("Document successfully written!");
+    })
+    .catch(function(error) {
+        console.error("Error writing document: ", error);
+    });
   }
-
   else {
     // No user is signed in.
     document.getElementById("user_div").style.display = "none";
