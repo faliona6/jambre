@@ -8,6 +8,8 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, '/client/dist/jam-it')));
 app.use(express.static(path.join(__dirname, '/client/src')));
+app.use(express.static(path.join(__dirname, '/client/src/javascript')));
+app.use(express.static(path.join(__dirname, '/client/src/assets')));
 
 
 app.use('/login', express.static(path.join(__dirname, '/client/dist/jam-it')));

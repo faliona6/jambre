@@ -22,11 +22,6 @@ firebase.auth().onAuthStateChanged(function(user) {
         console.error("Error writing document: ", error);
     });
   }
-  else {
-    // No user is signed in.
-    document.getElementById("user_div").style.display = "none";
-    document.getElementById("login_div").style.display = "block";
-  }
 });
 
   function create(){
