@@ -55,7 +55,7 @@ function fillPage() {
             console.log( data);
 
             y.getElementsByClassName('band-description')[0].innerHTML = data["description"];
-            y.getElementsByClassName('band-description')[0].onClick = 'sendToBandpage(' + data["name"] + ')';
+            y.getElementsByClassName('band-img').click = function () { sendToBandpage(this.id); };
             y.getElementsByClassName('band-name')[0].innerHTML = data["name"].toUpperCase();
             y.getElementsByClassName('band-location')[0].innerHTML = "Located in " + data["location"];
             y.getElementsByClassName('band-needed-instr')[0].innerHTML = "Looking for: " + data["lookingForInstruments"];

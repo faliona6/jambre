@@ -1,9 +1,9 @@
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
         var user = firebase.auth().currentUser;
-        if ($(location).attr("pathname") === '/login' || $(location).attr("pathname") === '/register') {
+        if ($(location).attr("pathname") === '/login.html' || $(location).attr("pathname") === '/register.html') {
             setTimeout(() => {
-                window.location.replace('/');
+                window.location.replace('/index.html');
             }, 1000);
         }
     }
