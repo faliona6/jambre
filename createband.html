@@ -84,7 +84,7 @@
         <h4>DESCRIPTION</h4>
         <textarea id="band_description" placeholder="Write a description of your band"></textarea>
 
-        <div id="left-information" class="whitespace">
+        <div id="left-information">
             <h4>LOOKING FOR</h4>
             <input id="band_looking_for_instruments" class="input" name="looking for" type="text" placeholder="Which instruments are you looking for?">
             <h4>GENRES</h4>
@@ -101,10 +101,22 @@
             </select>
             <h4>NEXT PERFORMANCE</h4>
             <input id="next_performance_field" class="input" name="next performance" type="text" placeholder="When and where is your next gig?">
-        </div>''
-        <br/>
+        </div>
     </div>
-    <button class="button" id="createButton" onclick="postBand()"> Create Band </button>
+
+    <div data-aos="fade-up" style="margin-bottom:50px">
+        <button class="button" id="createButton" onclick="postBand()"> Create Band </button>
+    </div>
+
+    <footer class="bs-docs-footer">
+        <!--    Footer    -->
+        <div class="container">
+            <ul class="bs-docs-footer-links">
+                <li><a href="https://github.com/faliona6/jambre">GitHub</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
