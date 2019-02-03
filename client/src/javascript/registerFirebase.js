@@ -2,7 +2,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
     var user = firebase.auth().currentUser;
-    var userName = document.getElementById("firstname_field").value + document.getElementById("lastname_field").value
+    var userName = document.getElementById("firstname_field").value + " " + document.getElementById("lastname_field").value
     var userInstruments = document.getElementById("instruments_field").value;
     var userGenres = document.getElementById("genres_field").value;
     var userPlayingPrefs = document.getElementById("playing_pref_field").value;
