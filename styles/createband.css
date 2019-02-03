@@ -106,3 +106,10 @@
 .whitespace{
     margin-bottom: 150px;
 }
+
+#createButton{
+    position: relative;
+    display: block;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
