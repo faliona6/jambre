@@ -39,6 +39,9 @@ p {
 .font-size-m {
     font-size: 18px !important;
 }
+.font-size-ml{
+    font-size: 20px !important;
+}
 .font-size-l {
     font-size: 40px !important;
 }
@@ -94,12 +97,12 @@ p {
 }
 
 .page-title {
-    font-size: 65px;
+    font-size: 70px;
     font-family: var(--main-font);
     color: var(--main-white);
     margin: 0px;
     padding: 0px;
-    text-shadow: 0 0 10px black
+    text-shadow: 0 0 5px black
 }
 
 .line {
@@ -132,14 +135,14 @@ p {
     height: auto;
 }
 
-.float-on-image {
+/* .float-on-image {
     left: 0;
     position:absolute;
     text-align:center;
     top: 30%;
     width: 100%;
     color:white;
-}
+} */
 
 .band-desc {
     margin-left: auto;
