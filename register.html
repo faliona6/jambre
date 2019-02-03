@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bandbase</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    Online Styles    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="http://allfont.net/allfont.css?fonts=montserrat-black"  type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <!--    Global styles/assets    -->
+    <link rel="stylesheet" type="text/css" href="styles/nav.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/register.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/index.css"/>
+    <link rel='shortcut icon' type="image/png" href="/assets/bandbase-logo-shadow.png">
+    <!--    JQuery/Popper/Bootstrap    -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <!--   Navigation Bar Elements    -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-nav-demo">
+                <ul class="nav navbar-nav">
+                    <li><img src="/assets/bandbaselogofinal.png" alt="Bandbase Logo" width="auto" height="60px" style="margin-top:5px"></li>
+                    <li><a href='/' class="nav-label">FIND JAMS</a></li>
+                    <li><a href='/createband' class="nav-label">CREATE A BAND</a></li>
+                    <li><a href='/about' class="nav-label">ABOUT</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span style="font-size:1.5em;" class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+                            <span class="badge">3</span></a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <img class="user-icon flow-right" src="/assets/profilepic.jpg">
+                                <!-- Dropdown -->
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                <li><a href="/profile">Profile</a></li>
+                                <li><a href="#">Messages</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Settings</a></li>
+                                <li><a href="/login" onclick='logout()'>Log Out</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- <li><a style="padding:20px 15px 15px"class="user-name" href='/'>FIONA</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="background"><!--    Body    -->
+        <div id="header">
+    
+            <div id="login_div">
+                <br />
+                <br />
+                <br />
+                <br />
+    
+                <img class="bandbase" src="/assets/BandBaseAlt1.png" alt="BandBase Logo">
+                <div id="container">
+                    <div>
+                        <hr />
+                        <input type="name" class="input" maxlength="30" placeholder="First Name" id="firstname_field"><br />
+                        <input type="name" class="input" maxlength="30" placeholder="Last Name" id="lastname_field"><br />
+                        <input type="email" class="input" maxlength="30" placeholder="Email" id="email_field"><br />
+                        <input type="password" class="input" maxlength="30" placeholder="Password" id="password_field"><br />
+                        <input type="password" class="input" maxlength="30" placeholder="Re-type password" id="password_conf_field"><br />
+                        <hr />
+                        <input type="instruments" class="input" max="200" type="text" placeholder="What instruments do you play?"
+                            id="instruments_field"><br />
+                        <input type="genres" class="input" max="200" type="text" placeholder="Which genres of music do you play?"
+                            id="genres_field"><br />
+                        <select class="input" name="Playing preferences" id="playing_pref_field">
+                            <option value="default">Choose your playing preference</option>
+                            <option value="Learner">Learner</option>
+                            <option value="Casual">Casual</option>
+                            <option value="Amateur">Amateur</option>
+                            <option value="Professional">Professional</option>
+                        </select>
+    
+                        <textarea class="bio" name="bio" rows="8" cols="50" placeholder="Write a short bio about your experience as a musician."
+                            id="bio_field"></textarea>
+                        <hr />
+                        <button id="createButton" onclick="create()"> Create Account </button>
+                        <div id="back">
+                            <a href="LOGIN PAGE URL">Back to Login page</a>
+                        </div>
+    
+                    </div>
+                </div>
+                <br />
+                <br />
+                <br />
+    
+            </div>
+    
+            <div id="user_div" class="loggedin-div">
+                <h3 style="margin-top:0px;">Welcome User</h3>
+                <p id="user_para">Welcome to Firebase. You're currently logged in.</p>
+                <button onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bs-docs-footer">
+        <!--    Footer    -->
+        <div class="container">
+            <ul class="bs-docs-footer-links">
+                <li><a href="https://github.com/faliona6/jambre">GitHub</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-functions.js"></script>
+<script src="javascript/initFirebase.js"></script>
+<script src="javascript/registerFirebase.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+</html>

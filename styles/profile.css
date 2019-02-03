@@ -1,0 +1,35 @@
+.profile-pic {
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: red;
+}
+
+#info {
+    padding: 0px 10px 10px 30px;
+}
+
+#left-column {
+    margin: 0px;
+}
+
+#right-column {
+    padding: 14px 30px 30px 30px;
+}
+
+#main-container {
+    overflow: auto;
+    padding: 61px 0px 0px 0px;
+    left: 50%;
+}
+
+#bands{
+    margin-bottom: 150px;
+}
+
+.profile-name {
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+}
