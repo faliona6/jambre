@@ -1,28 +1,33 @@
 <div class="hero-image">
-    <span class="band-name">SAMMY MILLER AND THE CONGREGATION</span>
-    <span class="subtext"> JOYFUL JAZZ—MUSIC THAT FEELS GOOD </span>
+    <button id="upload-banner-image">Upload Banner Image</button>
 </div>
 
-<div id="band-information" style="height:auto; width:100%">
-    <div id="left-column" style="width: 100%">
-        <h3>Description</h3>
-        <textarea name="bio" rows="8" cols="50" class="input" id="Description">Type your bio!</textarea>
-        <div>
-            <div id="left-information" class="flow-left">
-                <h4>LOCATION</h4>
-                <p class="description">Brooklyn, NY</p>
-                <h4>LOOKING FOR</h4>
-                <p class="description">Trumpet, Percussionist</p>
-                <h4>GENRES</h4>
-                <p class="description">Jazz</p>
-            </div>
-            <div id="right-information" class="flow-left">
-                <h4>LEVEL</h4>
-                <p class="description">Professional</p>
-                <h4>NEXT PERFORMANCE</h4>
-                <p class="description">Toronto, CA - Sony Center 4/5/2019</p>
-            </div>
-        <div>
+<div id="band-information" class="height:auto">
+    <h3>Description</h3>
+    <textarea id="description-input" placeholder="Write a description of your band"></textarea>
+
+    <div id="left-information">
+        <h4>LOCATION</h4>
+        <input class="input" name="location" type="text" placeholder="Where is your band based?">
+        <h4>LOOKING FOR</h4>
+        <input class="input" name="looking for" type="text" placeholder="Which instruments are you looking for?">
+        <h4>GENRES</h4>
+        <input class="input" name="gneres" type="text" placeholder="Which genre of music do you play?">
+    </div>
+    <div id="right-information">
+        <h4>LEVEL</h4>
+        <select class="input" name="Playing preferences" id="playing_pref_field">
+            <option value="default">Choose your playing preference</option>
+            <option value="Learner">Learner</option>
+            <option value="Casual">Casual</option>
+            <option value="Amateur">Amateur</option>
+            <option value="Professional">Professional</option>
+        </select>
+        <h4>NEXT PERFORMANCE</h4>
+        <input class="input" name="next performance" type="text" placeholder="When and where is your next gig?">
+    </div>
+    <br />
+    <div id="right-column">
 
     </div>
 </div>
