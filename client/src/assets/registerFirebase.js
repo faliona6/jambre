@@ -2,7 +2,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
     var user = firebase.auth().currentUser;
-    var userName = document.getElementById("firstname_field") + document.getElementById("lastname_field")
+    var userName = document.getElementById("firstname_field").value + document.getElementById("lastname_field").value
     var userInstruments = document.getElementById("instruments_field").value;
     var userGenres = document.getElementById("genres_field").value;
     var userPlayingPrefs = document.getElementById("playing_pref_field").value;
@@ -22,14 +22,14 @@ var db = firebase.firestore();
 .catch(function(error) {
     console.error("Error writing document: ", error);
 });
-      
+
     window.location.href = "http://google.com";
     if(user != null){
       var email_id = user.email;
 
     }
-  }   
-    
+  }
+
   else {
     // No user is signed in.
     document.getElementById("user_div").style.display = "none";
@@ -50,7 +50,7 @@ var db = firebase.firestore();
           window.alert("Error : " + errorMessage);
           // Do other stuff??
           });
-          
+
       }
       else {
           window.alert("Error : Passwords do not match");
