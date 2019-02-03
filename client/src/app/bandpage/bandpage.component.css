@@ -16,31 +16,54 @@
 .band-name{
     position: relative;
     top: 83%;
-    left: 1%;
-    color: lightGrey;
-    font-size: 30pt;
+    left: 3%;
+    color: var(--main-white);
+    font-size: 35pt;
     text-overflow: clip;
-    text-shadow: 0 0 4px black;
+    text-shadow: 0 0 10px black;
     font-family: var(--main-font);
 }
 
 .subtext{
     position: inherit;
     top: 83%;
-    left: 1%;
-    color: lightGrey;
+    left: 4%;
+    color: var(--main-white);
     font-size: 15pt;
     text-overflow: clip;
-    text-shadow: 0 0 4px black;
+    text-shadow: 0 0 10px black;
     font-family: var(--main-font);
 }
 
 /*Band Information*/
-.band-information{
-    position:absolute;
-    left:50%;
-    transform: translate(-50%, 0%);
-    width: 80%;
+#band-information{
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 0px 50px 0px 50px;
+}
+#left-column{
+    width:65%;
+    float: left;
+    padding-right:10px;
+    font-family: var(--main-font);
+}
+
+#left-information{
+    float:left;
+    width: 30%;
+    padding-right: 10px;
+}
+#left-information p{
+    padding-left: 15px;
+}
+#right-information{
+    float:left;
+    width: 70%;
+    padding-left: 10px;
+}
+#right-information p{
+    padding-left: 20px;
 }
 .header {
     font-family: var(--main-font);
@@ -49,13 +72,45 @@
 }
 
 
+/*player icons*/
+#right-column{
+    width:35%;
+    float: right;
+    padding-left:5px;
+    display:inline-block;
+}
+
+.profile-pic{
+    margin-top:20px;
+    width: 30%;
+    height:auto;
+    border-style: solid;
+    border-width: 5px;
+    border-color: lightGrey;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display:block;
+}
+
+.label{
+    color:black;
+    font-family: var(--main-font);
+    position: relative;
+    left:50.5%;
+    display: block;
+    transform: translate(-50%, 0%);
+    font-size: 10pt;
+    margin: 10px 0px 0px 0px;
+}
 /*Forum Styles*/
-#post {
+.post {
 	width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-	
+
 }
 
 #box {
@@ -63,7 +118,7 @@
     padding: 10px 10px 10px 50px;
     margin: 7px 16px 16px 20px;
     border-radius: 5px;
-    
+
 }
 
 .user-icon {
@@ -71,4 +126,14 @@
     height: auto;
     border-radius: 50%;
     position: absolute;
+}
+
+.write-post-box {
+    border: 1px solid grey;
+    padding: 15px;
+    margin: 7px 16px 16px 20px;
+    border-radius: 5px;
+    width:95%;
+    height: 180px;
+    vertical-align: text-top;
 }
