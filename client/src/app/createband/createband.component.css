@@ -58,6 +58,7 @@
     position: relative;
     float: left;
     width: 50%;
+    margin-bottom: 15px;
 }
 
 .input{
@@ -67,6 +68,7 @@
     margin: 5px 0px 5px 0px;
 
 }
+
 
 .header {
     font-family: var(--main-font);
@@ -100,4 +102,8 @@
     transform: translate(-50%, 0%);
     font-size: 10pt;
     margin: 10px 0px 0px 0px;
+}
+
+.whitespace{
+    margin-bottom: 150px;
 }
