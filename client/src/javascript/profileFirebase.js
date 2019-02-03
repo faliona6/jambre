@@ -1,30 +1,47 @@
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-        getUserData();
+        fillProfileOnStart();
     }
 });
 
+function fillProfileOnStart() {
+    getUserData()
 
 
-function hello() {
-    console.log("hello");
 }
 
+
+//Returns dictionary of user data. Access data["name"]
 function getUserData() {
     var db = firebase.firestore();
-    console.log(db);
     var user = firebase.auth().currentUser;
-    console.log("user: " + user.email);
     var docRef = db.collection("users").doc(user.email);
-    console.log("ref" + docRef);
 
     docRef.get().then(function(doc) {
         if (doc.exists) {
-            var data = console.log(doc.data());
-            console.log("data" + data);
+            var data = doc.data();
+            console.log(data);
+
+
+            document.getElementById("profile-email").innerHTML = "email: " + user.email;
+            document.getElementById("profile-name").innerHTML = data["name"].toUpperCase();
+            /*document.getElementById("profile-location").innerHTML = data["location"];*/
+            document.getElementById("profile-description").innerHTML = data["bio"];
+            document.getElementById("profile-instruments").innerHTML = data["instruments"];
+            document.getElementById("profile-genres").innerHTML = data["genres"];
+            document.getElementById("profile-preferences").innerHTML = data["preferences"];
+
+            var node = document.createTextNode("This is new.");
+            x = document.getElementById("profile-email");
+            x.appendChild(node);
+
+
         }
         else {
             console.log("No document");
         }
+
+        
     })
+
 }
