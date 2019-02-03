@@ -1,19 +1,30 @@
-$( document ).ready(function() {
-    getUserData();
+firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+        getUserData();
+    }
 });
 
-function getUserData() {
-    // var user = firebase.auth().currentUser;
-    // var db = firebase.firestore();
-    // var docRef = db.collection("users").doc(user);
 
-    // docRef.get().then(function(doc) {
-    //     if (doc.exists) {
-    //         var data = console.log(doc.data());
-    //         console.log(data);
-    //     }
-    //     else {
-    //         console.log("No document");
-    //     }
-    // })
+
+function hello() {
+    console.log("hello");
+}
+
+function getUserData() {
+    var db = firebase.firestore();
+    console.log(db);
+    var user = firebase.auth().currentUser;
+    console.log("user: " + user.email);
+    var docRef = db.collection("users").doc(user.email);
+    console.log("ref" + docRef);
+
+    docRef.get().then(function(doc) {
+        if (doc.exists) {
+            var data = console.log(doc.data());
+            console.log("data" + data);
+        }
+        else {
+            console.log("No document");
+        }
+    })
 }
