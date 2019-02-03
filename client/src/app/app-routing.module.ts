@@ -6,44 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { FindbandsComponent } from './findbands/findbands.component';
 import { BandpageComponent } from './bandpage/bandpage.component';
 import { ProfileComponent } from './profile/profile.component';
-<<<<<<< HEAD
 import { FooterComponent } from './footer/footer.component';
-
-const routes: Routes = [
-  {
-    path: '',
-    redirectTo: '/findbands',
-    pathMatch: 'full'
-  },
-  {
-    path: 'login',
-    component: LoginComponent
-  },
-  {
-    path: 'register',
-    component: RegisterComponent
-  },
-  {
-    path: 'bandpage',
-    component: BandpageComponent
-  },
-  {
-    path: 'findbands',
-    component: FindbandsComponent
-  },
-  {
-    path: 'profile',
-    component: ProfileComponent
-  },
-  {
-    path: 'createband',
-    component: CreatebandComponent
-  },
-  {
-    path: 'footer',
-    component: FooterComponent
-  }
-=======
 import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
@@ -79,8 +42,11 @@ const routes: Routes = [
     {
         path: 'about',
         component: AboutComponent
+    },
+    {
+        path: 'footer',
+        component: FooterComponent
     }
->>>>>>> a496828b24d78cd11e02d559d4a96d443173c6a1
 ];
 
 @NgModule({
