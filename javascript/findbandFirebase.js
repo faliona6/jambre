@@ -32,6 +32,7 @@ function fillPage() {
             console.log( data);
 
             x.getElementsByClassName('band-description')[0].innerHTML = data["description"];
+            x.getElementsByClassName('band-description')[0].onClick = 'sendToBandpage(' + data["name"] + ')';
             x.getElementsByClassName('band-name')[0].innerHTML = data["name"].toUpperCase();
             x.getElementsByClassName('band-location')[0].innerHTML = "Located in " + data["location"];
             x.getElementsByClassName('band-needed-instr')[0].innerHTML = "Looking for: " + data["lookingForInstruments"];
@@ -44,4 +45,8 @@ function fillPage() {
         console.log("Error getting documents: ", error);
     });
 
+}
+
+function sendToBandpage(bandName) {
+    console.log(bandName);
 }
