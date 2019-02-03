@@ -16,7 +16,7 @@
     padding: 0px 10px 10px 30px;
 }
 
-#left-column {  
+#left-column {
     margin: 0px;
 }
 
@@ -28,6 +28,10 @@
     overflow: auto;
     padding: 61px 0px 0px 0px;
     left: 50%;
+}
+
+#bands{
+    margin-bottom: 150px;
 }
 
 .profile-name {
