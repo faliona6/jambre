@@ -7,12 +7,22 @@
             "email": "fiona.soetrisno@gmail.com",
             "phone": "24324342343",
             "instruments": [
-                "violin",
-                "piano"
+                "Violin",
+                "Piano",
+                "Bass",
+                "Ocarina",
+                "Banjo",
+                "Lute",
+                "Harmonica",
+                "Recorder",
+                "Chinese Violin"
             ],
             "genres": [
-                "jazz",
-                "classical"
+                "Jazz",
+                "Classical",
+                "Dubstep",
+                "Rock",
+                "K-pop"
             ],
             "bands": [
                 "0101022",
