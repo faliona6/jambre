@@ -1,6 +1,6 @@
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg)*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.8)), url("../assets/BannerPhoto.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.8)), url("../assets/bandpageimage.png");
 
   /* Set a specific height */
   height: 60%;
@@ -120,7 +120,7 @@
     border-radius: 5px;
 }
 
-.user-icon {
+.user-icon-text {
     width: 60px;
     height: auto;
     border-radius: 50%;
