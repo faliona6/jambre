@@ -11,7 +11,11 @@ import { FindbandsComponent } from './findbands/findbands.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BandpageComponent } from './bandpage/bandpage.component';
 import { CreatebandComponent } from './createband/createband.component';
+<<<<<<< HEAD
 import { FooterComponent } from './footer/footer.component';
+=======
+import { AboutComponent } from './about/about.component';
+>>>>>>> a496828b24d78cd11e02d559d4a96d443173c6a1
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { FooterComponent } from './footer/footer.component';
     ProfileComponent,
     BandpageComponent,
     CreatebandComponent,
+<<<<<<< HEAD
     FooterComponent
+=======
+    AboutComponent
+>>>>>>> a496828b24d78cd11e02d559d4a96d443173c6a1
   ],
   imports: [
     BrowserModule,
