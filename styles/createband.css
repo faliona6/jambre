@@ -13,13 +13,12 @@
 }
 #upload-banner-image{
     position: relative;
-    top: 90%;
+    top: 93%;
     left: 85%;
     transform: translate(-50%, 0%);
-    background-color: lightGrey;
+    background-color: #e35953;
     font: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    color: rgb(100,100,100);
+    color: black;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;

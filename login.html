@@ -24,77 +24,25 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <!--   Navigation Bar Elements    -->
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo"
-                    aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-nav-demo">
-                <ul class="nav navbar-nav">
-                    <li><img src="/assets/bandbaselogofinal.png" alt="Bandbase Logo" width="auto" height="60px" style="margin-top:5px"></li>
-                    <li><a href='/' class="nav-label">FIND JAMS</a></li>
-                    <li><a href='/createband' class="nav-label">CREATE A BAND</a></li>
-                    <li><a href='/about' class="nav-label">ABOUT</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span style="font-size:1.5em;" class="glyphicon glyphicon-bell" aria-hidden="true"></span>
-                            <span class="badge">3</span></a></li>
-                    <li>
-                        <div class="dropdown">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                <img class="user-icon flow-right" src="/assets/profilepic.jpg">
-                                <!-- Dropdown -->
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                <li><a href="/profile">Profile</a></li>
-                                <li><a href="#">Messages</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Settings</a></li>
-                                <li><a href="/login" onclick='logout()'>Log Out</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <!-- <li><a style="padding:20px 15px 15px"class="user-name" href='/'>FIONA</a></li> -->
-                </ul>
-            </div>
-        </div>
-    </nav>
 
     <div class="background"><!--    Body    -->
-        <img class="bandbase" src="/assets/BandBaseAlt1.png" alt="BandBase logo">
+        <img class="bandbase" src="assets/BandBaseAlt1.png" alt="BandBase logo">
         <br />
 
         <div id="login_div" class="main-div">
             <input type="email" class="input" placeholder="Username" id="email_field"><br />
             <input type="password" class="input" placeholder="Password" id="password_field">
-            <img style="width: 25px; height: 25px; top: 80%; left: 80%" src="/assets/ShowPassword.png" alt="Show Password">
+            <img style="width: 25px; height: 25px; top: 80%; left: 80%" src="assets/ShowPassword.png" alt="Show Password">
             <br />
 
             <button id="loginButton" onclick="login()">Login</button>
-    
+
             <div id="createAccount">
-                <a href="/register">Need an account? Sign up here!</a>
+                <a href="register.html">Need an account? Sign up here!</a>
             </div>
         </div>
     </div>
 
-    <footer class="bs-docs-footer">
-        <!--    Footer    -->
-        <div class="container">
-            <ul class="bs-docs-footer-links">
-                <li><a href="https://github.com/faliona6/jambre">GitHub</a></li>
-                <li><a href="/about">About</a></li>
-            </ul>
-        </div>
-    </footer>
 </body>
 
 <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>

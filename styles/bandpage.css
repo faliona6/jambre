@@ -1,6 +1,6 @@
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg)*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.8)), url("../assets/BannerPhoto.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.8)), url("assets/BannerPhoto.jpg");
 
   /* Set a specific height */
   height: 60%;
